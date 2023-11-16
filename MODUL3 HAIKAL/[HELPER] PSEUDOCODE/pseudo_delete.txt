@@ -1,0 +1,18 @@
+Sertakan file koneksi database
+
+    Jika terdapat nilai 'id' dari GET:
+    - Ambil nilai 'id' dan simpan dalam variabel $id
+
+    Buat perintah DELETE SQL untuk menghapus data berdasarkan nilai id dari tabel showroom_mobil
+        - DELETE data dari tabel di mana id mobil sesuai dengan nilai $id
+        - Gunakan mysqli_query dengan koneksi $koneksi
+
+    Periksa apakah eksekusi query berhasil:
+        - Jika terdapat pengaruh perubahan pada koneksi:
+            - Tampilkan pesan "Data Berhasil dihapus" menggunakan JavaScript
+            - Redirect ke halaman 'list_mobil.php'
+        - Jika tidak terdapat pengaruh perubahan pada koneksi:
+            - Tampilkan pesan "Data Gagal dihapus" menggunakan JavaScript
+            - Redirect ke halaman 'list_mobil.php'
+
+Tutup koneksi ke database setelah selesai menggunakan database

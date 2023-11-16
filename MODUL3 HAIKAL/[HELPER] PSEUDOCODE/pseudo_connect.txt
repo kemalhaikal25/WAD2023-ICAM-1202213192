@@ -1,0 +1,12 @@
+Tentukan parameter koneksi database:
+    - Host = "localhost"
+    - Username = "root"
+    - Password = "" (kosong)
+    - Nama Database = "modul3_wad"
+
+Buat koneksi ke database menggunakan mysqli:
+    - Menggunakan host, username, password, dan nama database, buat objek koneksi ($koneksi) ke database
+
+Periksa apakah koneksi berhasil:
+    - Jika terjadi kesalahan koneksi:
+        - Hentikan program dengan pesan kesalahan: "Koneksi Gagal: [pesan kesalahan koneksi]"

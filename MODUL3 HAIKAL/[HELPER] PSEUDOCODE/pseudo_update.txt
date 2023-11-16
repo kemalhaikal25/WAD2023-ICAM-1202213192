@@ -1,0 +1,43 @@
+Sertakan file koneksi // Mengimpor file koneksi
+
+Jika terdapat nilai 'id' pada $_GET:
+    Ambil nilai 'id' dari $_GET dan simpan ke dalam variabel $id
+    
+    Fungsi update dengan parameter koneksi ($koneksi) dan data:
+        Ambil nilai 'id' dari data dan simpan ke dalam variabel $id
+        Ambil nilai 'nama_mobil' dari data dan simpan ke dalam variabel $nama_mobil
+        Ambil nilai 'brand_mobil' dari data dan simpan ke dalam variabel $brand_mobil
+        Ambil nilai 'warna_mobil' dari data dan simpan ke dalam variabel $warna_mobil
+        Ambil nilai 'tipe_mobil' dari data dan simpan ke dalam variabel $tipe_mobil
+        Ambil nilai 'harga_mobil' dari data dan simpan ke dalam variabel $harga_mobil
+
+        Buat query SQL UPDATE untuk mengubah data pada tabel showroom_mobil:
+            - Mengatur kolom nama_mobil dengan nilai $nama_mobil
+            - Mengatur kolom brand_mobil dengan nilai $brand_mobil
+            - Mengatur kolom warna_mobil dengan nilai $warna_mobil
+            - Mengatur kolom tipe_mobil dengan nilai $tipe_mobil
+            - Mengatur kolom harga_mobil dengan nilai $harga_mobil
+            - Di mana id sama dengan $id
+
+        Eksekusi query SQL menggunakan mysqli_query pada koneksi
+
+        Jika terdapat pengaruh perubahan (affected rows) pada koneksi:
+            Tampilkan pesan menggunakan JavaScript: "Data Berhasil diubah"
+            Arahkan ke halaman 'list_mobil.php'
+
+        Jika tidak terdapat pengaruh perubahan pada koneksi:
+            Tampilkan pesan menggunakan JavaScript: "Data Gagal diubah"
+            Arahkan ke halaman 'list_mobil.php'
+            Tampilkan pesan error dari koneksi
+
+    Buat array data dengan nilai:
+        - 'id' : $id
+        - 'nama_mobil' : nilai dari $_POST['nama_mobil']
+        - 'brand_mobil' : nilai dari $_POST['brand_mobil']
+        - 'warna_mobil' : nilai dari $_POST['warna_mobil']
+        - 'tipe_mobil' : nilai dari $_POST['tipe_mobil']
+        - 'harga_mobil' : nilai dari $_POST['harga_mobil']
+
+    Panggil fungsi update dengan parameter koneksi dan data
+
+Tutup koneksi ke database

@@ -1,0 +1,23 @@
+Sertakan file koneksi // Mengimpor file koneksi
+
+Jika metode permintaan adalah POST:
+    // Mengambil data dari formulir
+    Ambil nilai 'nama_mobil' dari $_POST
+    Ambil nilai 'brand_mobil' dari $_POST
+    Ambil nilai 'warna_mobil' dari $_POST
+    Ambil nilai 'tipe_mobil' dari $_POST
+    Ambil nilai 'harga_mobil' dari $_POST
+
+    // Buat perintah untuk menambahkan data
+    Buat perintah SQL INSERT INTO untuk memasukkan data baru ke tabel showroom_mobil 
+    - Kolom: nama_mobil, brand_mobil, warna_mobil, tipe_mobil, harga_mobil 
+    - Nilai: yang diambil dari form
+
+    Jika query berhasil dieksekusi pada koneksi:
+        Tampilkan pesan "Data berhasil ditambahkan."
+
+    Jika terjadi kesalahan pada query:
+        Tampilkan pesan "Error:" dengan detail kesalahan yang disertai error dari koneksi
+    Akhir Jika
+
+Tutup koneksi ke database
