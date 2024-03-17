@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right top, #0052d4, #65c7f7, #9cecfb, #e4f1fe, #f0f0f0);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2388ec;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-control {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #2388ec;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(35, 136, 236, 0.5);
+}
+
+/* Card Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h8 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2388ec;
+}
+
+.card span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-control {
+        width: calc(100% - 20px);
+    }
+}

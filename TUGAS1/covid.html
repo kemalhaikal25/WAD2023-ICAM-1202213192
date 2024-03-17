@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>DATA COVID-19 UPDATE</h2>
+        <div class="input">
+            <h3>Negara</h3>
+            <select class="form-control" id="negara">
+                <option>Pilih</option>
+            </select>
+        </div>
+        <div class="board">
+            <div class="card a">
+                <h8>Terjangkit Baru</h8>
+                <span id="TerjangkitBaru"></span>
+            </div>
+            <div class="card b">
+                <h8>Total Terjangkit</h8>
+                <span id="TotalTerjangkit"></span>
+            </div>
+            <div class="card c">
+                <h8>Kematian Baru</h8>
+                <span id="KematianBaru"></span>
+            </div>
+            <div class="card d">
+                <h8>Total Kematian</h8>
+                <span id="TotalKematian"></span>
+            </div>
+            <div class="card a">
+                <h8>Terakhir Diperbarui</h8>
+                <span id="diperbarui"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./webapp.js"></script>
+</body>
+</html>
